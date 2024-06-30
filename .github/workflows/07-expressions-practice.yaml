@@ -1,15 +1,16 @@
 name: 07 - Using Expressions practice
 on:
   push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       debug:
         type: boolean
         default: false
-    branches:
-      main
+
 jobs:
-  eho:
+  echo:
     runs-on: ubuntu-latest
     steps:
       - name: [debug] Print start-up data
